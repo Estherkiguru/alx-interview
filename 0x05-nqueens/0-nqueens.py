@@ -3,7 +3,7 @@
 import sys
 
 """Validate command-line arguments"""
-if len(sys.argv) != 2:
+if len(sys.argv) > 2 or len(sys.argv) < 2:
     print("Usage: nqueens N")
     sys.exit(1)
 
