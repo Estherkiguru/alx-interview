@@ -8,7 +8,7 @@ if len(sys.argv) > 2 or len(sys.argv) < 2:
     exit(1)
 
 if not sys.argv[1].isdigit():
-    prnt("N must be a number")
+    print("N must be a number")
     exit(1)
 
 if int(sys.argv[1]) < 4:
