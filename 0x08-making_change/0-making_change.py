@@ -7,6 +7,8 @@ def makeChange(coins, total):
     if total <= 0:
         return 0
 
+    coins = list(set(coins))
+
     dp = [float('inf')] * (total + 1)
     dp[0] = 0
 
